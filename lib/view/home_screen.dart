@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kpu_app_serkom/view/form_entry_screen.dart';
 import 'package:kpu_app_serkom/view/information_screen.dart';
+import 'package:kpu_app_serkom/view/list_screen.dart';
 
 import '../theme.dart';
 
@@ -59,7 +60,12 @@ class HomeScreen extends StatelessWidget {
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: cDarkGreen),
-                onPressed: () {},
+                onPressed: () {
+                     Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ListScreen()));
+                },
                 child: const Text(
                   "Lihat Data",
                   style: TextStyle(color: Colors.white),

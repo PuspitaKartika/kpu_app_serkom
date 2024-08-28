@@ -19,7 +19,7 @@ class CustomForm extends StatefulWidget {
     this.onChanged,
     this.validator,
     this.maxLines,
-    this.isPassword = false, // Tambahkan parameter ini
+    this.isPassword = false, 
   });
 
   @override
